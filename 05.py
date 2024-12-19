@@ -1,5 +1,7 @@
-#1,
+#19.12
+#Mare
 
+#1
 try:
     vanus = int(input("Sinu vanus: "))
     if vanus >= 18:

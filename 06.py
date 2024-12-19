@@ -1,3 +1,6 @@
+#19.12
+#Mare
+
 import math
 import turtle
 
