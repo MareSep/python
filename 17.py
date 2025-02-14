@@ -17,7 +17,15 @@ print(f"Tehingute arv: {tehingute_arv}")
 print(f"Positiivsete tehingute arv: {tehingud_pos}")
 print(f"Positiivsete tehingute summa: {pos_arv_summa:.2f}")
 
+
+mpalgad = 0
 with open("palgad.txt") as fail:
     sisu = fail.readlines()
     for i in sisu:
-        print(i, end="")
+        #print(i, end="")
+        tykeldus = i.split(",")
+        print(tykeldus[3])
+        if tykeldus[3] == "Mees":
+            mpalgad += float(tykeldus[6])
+
+print(f"Meeste palgad: {mpalgad:.2f}")
